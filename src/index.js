@@ -32,8 +32,6 @@ function decifrar() {
   const valorDesplazamiento = - parseInt(deslocamento .value); 
   textoADecifrar.value = cipher.decode(valorDesplazamiento, textoDecifrado);
   document.getElementById("cifrado").innerHTML = textoADecifrar.value;
-  mensajeDefault.value = cipher.decode(-3, mensajeDefault.value);
-  document.getElementById("cifrado").innerHTML = mensajeDefault.value;
 }
 
 function mostrar() {
