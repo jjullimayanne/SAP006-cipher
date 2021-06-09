@@ -1,3 +1,7 @@
+
+
+
+
 import cipher from './cipher.js';
 
 const deslocamento = document.getElementById("chave");
@@ -13,30 +17,39 @@ function cifrado() {
   /*document.getElementById("saludo").innerHTML = mensajeDefault.value;/*/
   document.getElementById("hello").innerHTML = primeMsg.value;
 
-  const textoIngresado = texto.value;
+  const textoDigitado = texto.value;
+
+  //strint + parseInt retorna um inteirou 
   const valorDeslocamento = parseInt(deslocamento.value);
   if (valorDeslocamento> 0) {           
     const textoCifrado = document.getElementById("cifrado");
-    textoCifrado.value = cipher.encode(valorDeslocamento, textoIngresado);
+    textoCifrado.value = cipher.encode(valorDeslocamento, textoDigitado );
     document.getElementById("cifrado").innerHTML = textoCifrado.value;
   }
   else {
-    textoCifrado.value = cipher.decode(valorDeslocamento, textoIngresado);
+    textoCifrado.value = cipher.decode(valorDeslocamento, textoDigitado );
     document.getElementById("cifrado").innerHTML = textoCifrado.value;
   }
 }
 
 function decifrar() {
-  const textoADecifrar = document.getElementById("texto");
+  const textoADecifrar = document.getElementById("cifrado");
   const textoDecifrado = textoADecifrar.value;
-  const valorDesplazamiento = - parseInt(deslocamento .value); 
-  textoADecifrar.value = cipher.decode(valorDesplazamiento, textoDecifrado);
+  const valorDeslocamento = - parseInt(deslocamento .value); 
+  textoADecifrar.value = cipher.decode(valorDeslocamento, textoDecifrado);
   document.getElementById("cifrado").innerHTML = textoADecifrar.value;
+
+  /*while () {
+    textoDecifrado.value = cipher.decode(valorDeslocamento, textoADecifrar);
+    document.getElementById("cifrado").innerHTML = textoDecifrado.value;
+
+  }*/
 }
 
+ //aparecer mensagem na tela quando licar no botão (addeventlistner)
 function mostrar() {
-  const textoIngresado = texto.value;
-  if (textoIngresado == '') {
+  const textodigitado = texto.value;
+  if (textodigitado == '') {
     alert('Coloque sua mensagem!');
   }
   else {
@@ -49,6 +62,9 @@ function mostrar() {
   }
 }
 
+
+//clicara mostra a mensagem cifrada 
+//clicar nao cifrado mostra a mensagem decifrada 
 
 click.addEventListener("click", mostrar);
 click.addEventListener("click", cifrado);
