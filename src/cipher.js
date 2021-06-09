@@ -17,7 +17,7 @@ const cipher = {
         //alfabeto + 0 =26
         txt += String.fromCharCode((valor - 65 + parseInt(offset)) % 26 + 65);
 
-        //especial 
+        //especial  ASCII 
       } else if (valor >= 97 && valor <= 122) {
         txt += String.fromCharCode((valor - 97 + parseInt(offset)) % 26 + 97);
       } else {
@@ -47,3 +47,6 @@ const cipher = {
     return txt;
   }
 }
+
+
+export default cipher;
