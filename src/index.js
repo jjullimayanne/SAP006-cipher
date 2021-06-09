@@ -42,11 +42,11 @@ function mostrar() {
     alert('Coloque sua mensagem!');
   }
   else {
-    if (document.getElementById('burbuja').style.display == 'none') {
-      document.getElementById('burbuja').style.display = 'flex';
+    if (document.getElementById('container_2').style.display == 'none') {
+      document.getElementById('container_2').style.display = 'flex';
     }
     else {
-      document.getElementById('burbuja').style.display = 'flex';
+      document.getElementById('container_2').style.display = 'flex';
     }
   }
 }
