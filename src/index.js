@@ -71,3 +71,37 @@ click.addEventListener("click", cifrado);
 clickDec.addEventListener("click", mostrar);
 clickDec.addEventListener("click", decifrar);
 
+
+//display on e off
+
+
+
+const botao = document.getElementById('ligar');
+
+function myFunction () {
+  const x = document.getElementById('para_esconder')
+
+  x.style.background = "transparent";
+  x.style.transition =  "900ms"
+
+}
+
+   
+
+botao.addEventListener("click", myFunction);
+
+
+
+
+
+const botaoDesligar = document.getElementById('desligar');
+
+function secFunction () {
+  const y = document.getElementById('para_esconder')
+
+  y.style.background = "black";
+  y.style.transition =  "900ms"
+
+}
+
+botaoDesligar.addEventListener("click", secFunction);

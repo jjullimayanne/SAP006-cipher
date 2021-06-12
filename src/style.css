@@ -24,8 +24,9 @@
     margin-left: 30px;
     margin-top: 30px;
     border-radius: 10px;
+   
     
-    z-index: 1;
+ 
     
     
 }
@@ -39,6 +40,7 @@
     width: 300px;
     height: 240px;
     background-color: #b5b28f;
+   
  
 }
 
@@ -56,6 +58,7 @@
     left: 452px;
     top: 30px;
     box-shadow:  0px -6px 20px rgba(255, 255, 255, 1), 0px 4px 20px rgba(0, 0, 0, 0.8);
+    
 }
 
 #texto{
@@ -70,9 +73,25 @@
 #ligar{
     position: absolute;
     width: 10px;
-    height: 40px;
+    height: 20px;
     position: absolute;
-    background-color: #424242;
+    background-color: #38a0a3;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    top: 55px;
+    left: 416px;
+    box-shadow: 2px 3px 3px #BFAB52;
+    transition: bottom 0.5s ease 0s;
+    display: block;
+    cursor: pointer;
+   
+  }
+
+  #desligar { position: absolute;
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    background-color: #bd7474;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     top: 85px;
@@ -80,9 +99,8 @@
     box-shadow: 2px 3px 3px #BFAB52;
     transition: bottom 0.5s ease 0s;
     display: block;
-    visibility:visible;
     cursor: pointer;
-   
+
   }
 
 
@@ -107,6 +125,7 @@
     text-align: start;
     background: #C4C4C4;
     border-radius: 10px;
+    z-index: -1;
     
 }
 
@@ -243,3 +262,17 @@ button{
       margin-top: -480px;
       margin-left: -344px;
   }
+
+  #para_esconder {
+    display: flex;
+    position: absolute;
+    width: 294px;
+    height: 235px;
+    margin-top: -4px;
+    margin-left: -2px;
+    background-color: #000000;
+    z-index: 2000;
+   
+   
+    
+}
