@@ -14,7 +14,7 @@ const primeMsg = document.getElementById("hello");
 function cifrado() {
     primeMsg.value = "Quer uma nova senha?";
 
-  /*document.getElementById("saludo").innerHTML = mensajeDefault.value;/*/
+  
   document.getElementById("hello").innerHTML = primeMsg.value;
 
   const textoDigitado = texto.value;
@@ -39,11 +39,6 @@ function decifrar() {
   textoADecifrar.value = cipher.decode(valorDeslocamento, textoDecifrado);
   document.getElementById("cifrado").innerHTML = textoADecifrar.value;
 
-  /*while () {
-    textoDecifrado.value = cipher.decode(valorDeslocamento, textoADecifrar);
-    document.getElementById("cifrado").innerHTML = textoDecifrado.value;
-
-  }*/
 }
 
  //aparecer mensagem na tela quando licar no botão (addeventlistner)
@@ -60,6 +55,10 @@ function mostrar() {
       document.getElementById('container_2').style.display = 'flex';
     }
   }
+
+ 
+  
+
 }
 
 
@@ -71,3 +70,4 @@ click.addEventListener("click", cifrado);
 
 clickDec.addEventListener("click", mostrar);
 clickDec.addEventListener("click", decifrar);
+
