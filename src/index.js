@@ -105,3 +105,4 @@ function secFunction () {
 }
 
 botaoDesligar.addEventListener("click", secFunction);
+
