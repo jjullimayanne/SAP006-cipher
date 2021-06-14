@@ -12,3 +12,5 @@ Uma senha é a principal alternativa para se acessar contas de email, redes soci
 
 ### A codificação de César
 
+ A cifra de César é um dos primeiros tipos de criptografias conhecidas na história. O imperador romano Júlio César utilizava essa cifra para enviar ordens secretas aos seus generais no campo de batalha.
+
