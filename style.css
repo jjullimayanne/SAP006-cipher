@@ -1,0 +1,278 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+*{
+
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0px;
+    
+}
+
+
+.container{
+    padding: 10%;
+    background-size: cover; 
+    height: 410px;
+    
+}
+
+.tela{
+    position: absolute;
+    background-color:#424242;
+    height: 280px;
+    width: 350px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+   
+    
+ 
+    
+    
+}
+
+.tela_dentro{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 55px;
+    border: 6px solid rgb(146, 145, 145);
+    z-index: 2;
+    width: 300px;
+    height: 240px;
+    background-color: #b5b28f;
+   
+ 
+}
+
+.placer{
+    margin: 0px auto;
+    margin-left: 180px;
+    margin-top: 80px;
+    background-color:#79c753;
+    border-radius: 10px 10px  100px 10px;
+    text-align: center;
+    height: 363px;
+    position: absolute;
+    width: 418px;
+    height: 603px;
+    left: 452px;
+    top: 30px;
+    box-shadow:  0px -6px 20px rgba(255, 255, 255, 1), 0px 4px 20px rgba(0, 0, 0, 0.8);
+    
+}
+
+#texto{
+    margin-top: -190px;
+    margin-right: -30px;
+
+}
+
+
+
+
+#ligar{
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    background-color: #38a0a3;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    top: 55px;
+    left: 416px;
+    box-shadow: 2px 3px 3px #BFAB52;
+    transition: bottom 0.5s ease 0s;
+    display: block;
+    cursor: pointer;
+   
+  }
+
+  #desligar { position: absolute;
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    background-color: #bd7474;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    top: 85px;
+    left: 416px;
+    box-shadow: 2px 3px 3px #BFAB52;
+    transition: bottom 0.5s ease 0s;
+    display: block;
+    cursor: pointer;
+
+  }
+
+
+
+
+.container_2 {
+    background-color: rgb(238, 15, 89);
+}
+
+
+
+
+
+
+.caixa{
+    color: #265385;
+    position: absolute;
+    left: 5px;
+    padding: 50px;
+    top: 20px;
+    padding: 10px;
+    text-align: start;
+    background: #C4C4C4;
+    border-radius: 10px;
+    z-index: -1;
+    
+}
+
+
+
+
+.recebido{
+    display: none;
+}
+.caixa2{
+    color: #265385;
+    position: absolute;
+    left: 125px;
+    top: 120px;
+    padding: 10px;
+    text-align: start;
+    background: #C4C4C4;
+    border-radius: 10px;
+    width: 160px;
+    
+}
+
+
+.txt{
+    text-align: left;
+    resize: none;
+    position: absolute;
+    width: 310px;
+    height: 80px;
+    right: 90px;
+    top: 535px;
+    background: #d2e4ca;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.txt::placeholder,
+.number::placeholder{
+    color: #85898d;
+
+}
+.number{
+    position: absolute;
+    color: #1a1b1b;
+    width: 53px;
+    height: 27px;
+    left: 50px;
+    top: 480px;
+    background: #d2e4ca;
+    border: none;
+    border-radius: 10px;
+   
+}
+
+    
+
+button{
+    color: white;
+    background-color: rgb(22, 45, 61,90%);
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    font-size:medium;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 350px;
+    top: 535px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+.boton {
+    margin-top: -105px;
+    background-color: rgb(69, 124, 206);
+    box-shadow: 0px -6px 20px rgba(255, 255, 255, 0.6), 0px 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.descifrar{
+    margin-top: -55px;
+    background-color: brown;
+    margin-left: -50px;
+    box-shadow: 0px -6px 20px rgba(255, 255, 255, 0.6), 0px 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.letras {
+   position: absolute;
+   margin-top: 265px;
+   z-index: 4;
+   margin-left: 150px;
+}
+
+    span {
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+
+.s{
+    color: #E11B50;
+    background: none;
+    
+  }
+  .e{
+    color: #9D6CAE;
+    background: none;
+  }
+  .n{
+    color: #AECF36;
+    background: none;
+  }
+  .h{
+    color: #F5E82A;
+    background: none;
+  }
+  .a {
+    color: #1890B2;
+    background: none;
+  }
+
+
+  #red {
+      background-color: red;
+      width: 5px;
+      height: 8px;
+      border: 50%;
+      margin-top: -480px;
+      margin-left: -344px;
+  }
+
+  #para_esconder {
+    display: flex;
+    position: absolute;
+    width: 294px;
+    height: 235px;
+    margin-top: -4px;
+    margin-left: -2px;
+    background-color: #000000;
+    z-index: 2000;
+   
+   
+    
+}
