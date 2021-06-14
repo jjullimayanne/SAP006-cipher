@@ -6,4 +6,9 @@
 
 :bulb:
 
-Uma senha é a principal alternativa para se acessar contas de email, redes sociais e até plataformas bancárias, a ideia aqui é que possa-se usar uma senha facil como o proprio nome e a partir da criptografia de césar obter uma senha mais complexa. 
+Uma senha é a principal alternativa para se acessar contas de email, redes sociais e até plataformas bancárias, a ideia aqui é que possa-se usar uma senha fácil como o proprio nome e a partir da criptografia de César obter uma senha mais complexa. 
+
+
+
+### A codificação de César
+
