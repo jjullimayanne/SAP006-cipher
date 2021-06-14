@@ -6,7 +6,7 @@
 
 :bulb:
 
-Uma senha é a principal alternativa para se acessar contas de email, redes sociais e até plataformas bancárias, a ideia aqui é que possa-se usar uma senha fácil como o proprio nome e a partir da criptografia de César obter uma senha mais complexa. 
+Uma senha é a principal alternativa para se acessar contas de email, redes sociais e até plataformas bancárias, a ideia aqui é que possa-se usar uma senha fácil como o proprio nome e a partir da criptografia de César obter uma senha mais complexa. A inspiração para o design veio do  portátil lançado por Gunpei Yokoi e um time de engenheiros do Nintendo R&D1, o Game Boy.
 
 
 
