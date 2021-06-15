@@ -13,4 +13,6 @@ Uma senha é a principal alternativa para se acessar contas de email, redes soci
 ### A codificação de César
 
  A cifra de César é um dos primeiros tipos de criptografias conhecidas na história. O imperador romano Júlio César utilizava essa cifra para enviar ordens secretas aos seus generais no campo de batalha.
+ 
+ Foi utilizado código ASCII, que é um código binário que codifica um conjunto de 128 sinais: 95 sinais gráficos e 33 sinais de controle assim a partir disso é possivel aplicar a lógica do offset, ou seja a chave de deslocamento.
 
