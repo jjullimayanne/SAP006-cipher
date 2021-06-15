@@ -1,7 +1,3 @@
-
-
-
-
 import cipher from './cipher.js';
 
 const deslocamento = document.getElementById("chave");
@@ -12,22 +8,21 @@ const clickDec = document.getElementById("descifrar");
 const primeMsg = document.getElementById("hello");
 
 function cifrado() {
-    primeMsg.value = "Quer uma nova senha?";
+  primeMsg.value = "Quer uma nova senha?";
 
-  
+
   document.getElementById("hello").innerHTML = primeMsg.value;
 
   const textoDigitado = texto.value;
 
   //strint + parseInt retorna um inteirou 
   const valorDeslocamento = parseInt(deslocamento.value);
-  if (valorDeslocamento> 0) {           
+  if (valorDeslocamento > 0) {
     const textoCifrado = document.getElementById("cifrado");
-    textoCifrado.value = cipher.encode(valorDeslocamento, textoDigitado );
+    textoCifrado.value = cipher.encode(valorDeslocamento, textoDigitado);
     document.getElementById("cifrado").innerHTML = textoCifrado.value;
-  }
-  else {
-    textoCifrado.value = cipher.decode(valorDeslocamento, textoDigitado );
+  } else {
+    textoCifrado.value = cipher.decode(valorDeslocamento, textoDigitado);
     document.getElementById("cifrado").innerHTML = textoCifrado.value;
   }
 }
@@ -35,29 +30,27 @@ function cifrado() {
 function decifrar() {
   const textoADecifrar = document.getElementById("cifrado");
   const textoDecifrado = textoADecifrar.value;
-  const valorDeslocamento = - parseInt(deslocamento .value); 
+  const valorDeslocamento = -parseInt(deslocamento.value);
   textoADecifrar.value = cipher.decode(valorDeslocamento, textoDecifrado);
   document.getElementById("cifrado").innerHTML = textoADecifrar.value;
 
 }
 
- //aparecer mensagem na tela quando licar no botão (addeventlistner)
+//aparecer mensagem na tela quando licar no botão (addeventlistner)
 function mostrar() {
   const textodigitado = texto.value;
   if (textodigitado == '') {
     alert('Coloque sua mensagem!');
-  }
-  else {
+  } else {
     if (document.getElementById('container_2').style.display == 'none') {
       document.getElementById('container_2').style.display = 'flex';
-    }
-    else {
+    } else {
       document.getElementById('container_2').style.display = 'flex';
     }
   }
 
- 
-  
+
+
 
 }
 
@@ -78,15 +71,15 @@ clickDec.addEventListener("click", decifrar);
 
 const botao = document.getElementById('ligar');
 
-function myFunction () {
+function myFunction() {
   const x = document.getElementById('para_esconder')
 
   x.style.background = "transparent";
-  x.style.transition =  "900ms"
+  x.style.transition = "1500ms"
 
 }
 
-   
+
 
 botao.addEventListener("click", myFunction);
 
@@ -96,13 +89,12 @@ botao.addEventListener("click", myFunction);
 
 const botaoDesligar = document.getElementById('desligar');
 
-function secFunction () {
+function secFunction() {
   const y = document.getElementById('para_esconder')
 
   y.style.background = "black";
-  y.style.transition =  "900ms"
+  y.style.transition = "1500ms"
 
 }
 
 botaoDesligar.addEventListener("click", secFunction);
-
